@@ -1,25 +1,25 @@
 import axios from "axios";
 
 const api = axios.create({
-     baseURL: "https://jsonplaceholder.typicode.com",
+     baseURL: "https://fakestoreapi.com",
 });
 
  //get method
 
 export const getPost = () => {
-    return api.get("/posts")
+    return api.get("/products")
  };
 
  //Delete method
 
  export const deletePost = (id) => {
-    return api.delete(`/posts/${id}`)
+    return api.delete(`/products/${id}`)
  }
 
  //Post method
 
  export const  postData = (post) =>{
-    return api.post("/posts", post)
+    return api.post("/products", post)
   };
 
   //put method

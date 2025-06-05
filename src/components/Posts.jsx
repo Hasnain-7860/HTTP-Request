@@ -58,7 +58,10 @@ const Posts = () => {
                             <h1 className='text-white text-[25px]'> {title}</h1>
                             <p className='text-red-400'>Price:{price}</p>
                             <p className='text-white'>category:{category}</p>
-                            <p className='text-white'>{description}</p>
+                            <p className='text-red-300'>{description}</p>
+                            <p className='text-red-500'>{description}</p>
+                            <p className='text-red-900'>{description}</p>
+
                             
 
                             <button className='bg-green-400 text-[21px] w-[5rem] rounded-md ' onClick={()=>handleUpdatePost(curElem)}>Edit</button>
