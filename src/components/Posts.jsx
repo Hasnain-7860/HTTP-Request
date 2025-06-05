@@ -40,6 +40,13 @@ const Posts = () => {
       };
 
       const handleUpdatePost = (curElem) => setUpdateDataApi(curElem);
+
+      function sum(a,b){
+        return a+b;
+      }
+      let result = sum(5,5)
+      console.log(result)
+      console.log(sum(29,30))
      
   return (
     <>

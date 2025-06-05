@@ -27,4 +27,5 @@ export const getPost = () => {
 //   export const putPost =() =>{
 //    return api.put(`/posts/${id}`)
 //   }
+
   
