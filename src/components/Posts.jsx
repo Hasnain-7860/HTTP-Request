@@ -50,12 +50,17 @@ const Posts = () => {
         <ol className='grid grid-cols-3 gap-[3.2rem]'>
             {
                 data.map((curElem)=>{
-                    const {id, body, title} = curElem;
+                    const {id, body, title, image, category,description,price} = curElem;
                     return(
                         <li className=' p-[1.6rem] rounded-[0.3rem] bg-[#212f3c] border-l-4 border-' key={id}>
                             {/* <h1>{title}</h1> */}
-                            <p className='text-white'>Title: {title}</p>
-                            <p className='text-white'>Body: {body}</p>
+                            <img src={image} alt="" />
+                            <h1 className='text-white text-[25px]'> {title}</h1>
+                            <p className='text-red-400'>Price:{price}</p>
+                            <p className='text-white'>category:{category}</p>
+                            <p className='text-white'>{description}</p>
+                            
+
                             <button className='bg-green-400 text-[21px] w-[5rem] rounded-md ' onClick={()=>handleUpdatePost(curElem)}>Edit</button>
                             <button className='bg-red-600 hover:text-white shadow-lg text-[21px] w-[5rem] rounded-md ml-3' onClick={()=>handleDeletePost (id)}>Delete</button>
 
