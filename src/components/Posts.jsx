@@ -107,7 +107,7 @@ const Posts = () => {
 
 
 
-    let fruites = ["apple", "orange","mango","grapes","banana"];
+    // let fruites = ["apple", "orange","mango","grapes","banana"];
     // for(let item of fruits){
     //     console.log(item);
     // }
@@ -238,14 +238,42 @@ const Posts = () => {
 
 const Numbers = [1,2,3,4,5,6,7,8,9];
 let uniqeValue= Numbers.filter((curElem, index,arr)=>{
-    console.log(curElem);
-    console.log(arr[index])
+    // console.log(index)
+    // console.log(arr.indexOf(curElem))
+    return arr.indexOf(curElem)=== index
 })
+console.log(uniqeValue)
+
+
+const Arr=[2,4,6,8,10,12,14,16,37];
+let unique = Arr.filter((curElem,index,arr)=>{
+    return arr.indexOf(curElem)
+})
+console.log(Arr);
 
 
 
+const fruites = ["Banana","Apple","Mango","Grapes"];
+fruites.sort();
+console.log(fruites)
 
 
+
+const Number =[1,2,3,4,5,4,7,8,9,];
+Number.sort((a,b)=>{
+    if(a > b) return -1;
+    if(b>a ) return 1;
+
+});
+console.log(Numbers)
+
+
+const  productprice = [2,3,4,5,6,7,8,900]
+
+const totalPrice = productprice.reduce((accum,curElem)=>{
+    return accum + curElem;
+},0);
+console.log(totalPrice)
 
 
 
