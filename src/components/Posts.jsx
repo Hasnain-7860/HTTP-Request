@@ -41,12 +41,99 @@ const Posts = () => {
 
       const handleUpdatePost = (curElem) => setUpdateDataApi(curElem);
 
-      function sum(a,b){
-        return a+b;
-      }
-      let result = sum(5,5)
-      console.log(result)
-      console.log(sum(29,30))
+    //   function sum(a,b){
+    //     return a+b;
+    //   }
+    //   let result = sum(5,5)
+    //   console.log(result)
+    //   console.log(sum(29,30))
+
+
+    // var result = (function (a,b){
+    //     console.log(a+b);
+    //     // return a-b;
+    //     return a+b;
+
+    // })(5,55);
+
+    // console.log("the sum of the number " + result);
+    // console.log( "ym h hm" + result);
+    // console.log("tum kya kr rhe ho" + result)
+
+
+    // const sum = (a,b) => console.log(`The sum of ${a} and ${b} is ${a+b}.`);
+    // sum(5,52)
+    // sum(20,30 )
+
+    // const sum = (a,b) =>{
+    //     let result = `THE sum of ${a} and ${b} is ${a+b}`;
+    //     console.log(result)
+    // };
+    // sum(10,3)
+
+    // const greet =()=> console.log("plz like and share")
+    // greet()
+
+
+    // const isReverce = (str) =>{
+    //     for(let index=0; index <= str.length; index++){
+    //         console.log(str[index])
+    //     }
+    // }
+    //         isReverce("vinod thapa")
+
+
+
+    // const isReverce = (str)=>{
+    //     for(let index=0; index<= str.length; index++){
+    //         console.log(str[index])
+    //     }
+    // }
+    // isReverce("Hasnain Bhai")
+
+
+
+
+    // const isPalindrome = (str)=>{
+    //     let reverse = ""
+    //     for(let index=str.length - 1; index >= 0 ; index--){
+    //         reverse = reverse + str[index]
+    //     }
+    //        return str === reverse ? true : false;
+ 
+    // };
+
+    // console.log(isPalindrome("hariom"));
+
+
+
+    let fruites = ["apple", "orange","mango","grapes","banana"];
+    // for(let item of fruits){
+    //     console.log(item);
+    // }
+
+    // for(let item in fruits){
+    //     console.log(item)
+    // }
+
+    // const   myMapArr = fruites.map((curElem,index,arr)=>{
+    //     return `my fav fruit is  ${curElem}`;
+    // });
+    // console.log(myMapArr)
+    // console.log(fruites)
+
+    fruites.forEach((curElem)=>{
+        console.log(`i am a ${curElem}`)
+    });
+
+
+
+
+
+    
+    
+
+
      
   return (
     <>
