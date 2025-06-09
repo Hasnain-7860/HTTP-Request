@@ -122,9 +122,146 @@ const Posts = () => {
     // console.log(myMapArr)
     // console.log(fruites)
 
-    fruites.forEach((curElem)=>{
-        console.log(`i am a ${curElem}`)
-    });
+    // fruites.forEach((curElem)=>{
+    //     console.log(`i am a ${curElem}`)
+    // });
+
+    // const myMapArr = fruites.map((curElem,index,arr)=>{
+    //     return `My fav fruit is ${curElem} and ${index}`
+    // });
+    // console.log( myMapArr)
+
+//    fruites.forEach((value)=>{
+//     return value*2;
+//    })
+
+//    console.log(fruites);
+
+//  fruites.forEach((value)=>{
+//     return `$(value)`;
+// })
+// console.log(fruites)
+
+
+
+
+// let number = [10, 20, 30 ,40, 50, 60]
+
+// let Divide = number.map((curElem,index,arr)=>{
+//     return `The number is ${curElem*2}`
+// })
+// console.log(Divide);
+
+
+
+// const num = [1,2,3,4,5,6,7,8,2,6,9,]
+
+
+// const result = num.lastIndexOf(6,9)
+// console.log(result); 
+
+// const result = num.includes(20)
+// console.log(result);
+
+
+
+// const months = ["Jan", "march", "April", "June", "July"]
+ 
+// months.splice(months.length, 0, "Dec");
+// console.log(months)
+
+// const indexToUpdate = months.indexOf("march");
+// months.splice(indexToUpdate, 1 ,"March");
+// console.log(months);
+
+
+// const indexToDelete = months.indexOf("June");
+// months.splice(indexToDelete, 1)
+// console.log(months)
+
+
+// const Numbers = [1,2,3,,4,5,6,7,8,9];
+// const result =Numbers.find((curElem)=>{
+//     return curElem>6
+// })
+// console.log( result)
+
+
+
+
+// const result = Numbers.map((curElem)=>
+//     curElem * 5 
+// )
+// console.log(result)
+
+// const result2 =result.findIndex((curElem)=>{
+//     return curElem>25
+// })
+// console.log( result2)
+
+
+// const result = Numbers.filter((curElem)=>{
+//     return curElem>5
+// })
+// console.log(result)
+
+
+
+// let value =6;
+// const Nom = [2,3,4,1,2,3,5,6,4,3,7,6,2,3,4]
+
+// let updateCart = Nom.filter((curElem)=>{
+//     return curElem !== value;
+// })
+// console.log(updateCart)
+
+
+
+
+
+
+// const products = [
+//     {name:"Phone", price:800},
+//     {name:"Remote", price:1000},
+//     {name:"Lunch Box" , price:500},
+//     {name:"Window AC", price:5000}
+// ]
+
+// const Shop = products.filter((curElem)=>{
+//     return curElem.price <=500
+// })
+// console.log(Shop)
+
+
+//filter unique value
+
+
+const Numbers = [1,2,3,4,5,6,7,8,9];
+let uniqeValue= Numbers.filter((curElem, index,arr)=>{
+    console.log(curElem);
+    console.log(arr[index])
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
 
 
 
