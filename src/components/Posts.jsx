@@ -276,30 +276,196 @@ const totalPrice = productprice.reduce((accum,curElem)=>{
 console.log(totalPrice)
 
 
+let text = "Hello Hasnain, welcome to my  javascript course  this is a good javascript course"
+
+let result = text.match(/javascript/gi)
+console.log(result)
+
+
+
+let passage = "hello i am Prakash i am learning programing Prakash"
+let matchresult = passage.matchAll("Prakash")
+console.log(...matchresult)
+// for(let item of matchresult){
+//     console.log(item)
+// }
+
+
+
+let name = "Java learning and JavaScript learning"
+let coding = name.matchAll("learning")
+console.log(...coding)
+// for(let item of coding){
+//     console.log(item)
+// }
+
+
+
+let string = "Hello bhaiyo kese ho"
+let include = string.includes('Hello')
+let inc = string.includes('ji')
+console.log(include,inc) 
+
+const strin = "i am learning a react"
+const ince = strin.includes('learning')
+console.log(ince)
+
+
+let numbers = "1,2,3,4,5,6,7,7"
+let results = numbers.includes(10)
+console.log(results)
+
+
+let heading = "Hello JavaScript Welcome the world best JavaScript course";
+let resultss = heading.startsWith("Hello");
+console.log(resultss)
+
+
+let head = "i have learn react"
+const resu = head.startsWith("i")
+console.log(resu) 
+
+
+
+let endwith = "i am learning english becouse i need thatswhy"
+let res = endwith.endsWith("thatswhy")
+console.log(res)
+
+    //Slice mehtad last index number not includeing
+
+
+    let slice = "Now i am working i have completed my graduation"
+    let re = slice.slice(15,47)
+    console.log(re)
+
+
+    let Slice = "Now I am working i have complete my fraduation"
+    let ress = Slice.slice()
+    console.log(ress)
 
 
 
 
+    let caracter = "what is topic about"
+    let resultsss = caracter.charCodeAt(3)
+    console.log(resultsss)
 
 
-
-
-
-
-
-    
-
-
-
-
-
-
-
-    
-    
-
-
+    //trim  remove space
      
+    let trim = "    Hello world    "
+    console.log(trim.length)
+    let answer =trim.trim();
+    console.log(answer)
+    console.log(answer.length)
+
+    //string to arry change
+
+    let stringg = "Hasnain, prakash, Mustafa"
+    let Array = stringg.split(",").reverse().join()
+    console.log(Array)
+
+    let split = "Azad, Prince, suraj"
+    let Arrays = split.split(",").reverse().join()
+    console.group(Arrays)
+    
+// for(let char = 97; char<=122; char++){
+//     console.log(String.fromCharCode(char))
+// }
+
+
+for(let char=97; char<=122; char++){
+    console.log(String.fromCharCode(char))
+}
+
+
+
+// const checkAll = (str)=>{
+// const vowels = "aeiou";
+// for(let char of vowels){
+//     console.log(char);
+//     console.log(str.includes)
+// };
+// };
+
+
+// console.log(checkAll("my name is Hasnain"));
+
+
+
+// let str = "me name is Hasnain"
+// console.log( str.includes('a'))
+
+const comment = (str)=>{
+    const vowels = "aeiou";
+    for(let index of vowels){
+        console.log(index);
+        console.log(str.includes(index))
+    }
+}
+console.log(comment("i have to go market"))
+
+const network = (str)=>{
+    const vowels = "aeiou";
+    for(let index of vowels){
+        console.log(index);
+        console.log(str.includes(index))
+    }
+}
+console.log(network("automatic work"))
+   
+
+const check =(str)=>{
+    const vowels = "aeiou"
+    for( let index of vowels){
+        console.log(index);
+        console.log(str.includes(index))
+    }
+
+}
+console.log(check("what happend"))
+
+const greet =(str)=>{
+    const vowels = "aeiou"
+    for(let index of vowels){
+        console.log(index)
+        console.log(str.includes(index));
+    }
+}
+console.log(greet("i am hearou"))
+
+const greete =(str)=>{
+    const vowels = "aeiou"
+    for(let index of vowels){
+        console.log(index)
+        console.log(str.includes(index));
+    }
+}
+console.log(greete("where are you form"))
+
+
+
+const letter=(str)=>{
+    const letter = "aeiou"
+    for(let index of letter){
+        console.log(index)
+        console.log(str.includes(index))
+    }
+}
+console.log(letter("mustafa"))
+
+
+const User=(str)=>{
+    const Letter = "aeiou"
+    for(let index of Letter){
+        console.log(index)
+        console.log(str.includes(index))
+    }
+}
+console.log(User("include your name"))
+
+
+
   return (
     <>
     <section className='p-[1.6rem] bg-[#212f3d] rounded-md m-auto mb-8'>
